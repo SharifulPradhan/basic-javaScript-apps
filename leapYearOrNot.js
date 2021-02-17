@@ -2,7 +2,7 @@ const getvalue = () => {
   const getNumber = document.getElementById('number').value;
   const x = parseInt(getNumber);
   console.log(x%4);
-  if(x % 4 === 0 && x > 0){
+  if(x % 4 == 0 && x > 0 && x % 100 == 0){
     creatMessage(x, 'is a Leap Year');
   }
   else if(x > 0){
