@@ -1,3 +1,11 @@
+const gradeFinder = () => {
+  const div = document.getElementById('input-field');
+  div.style.display = 'block';
+}
+
+
+
+
 function getvalue(){
   const number = document.getElementById('number').value;
   const x = parseInt(number);

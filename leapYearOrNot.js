@@ -14,7 +14,7 @@ const getvalue = () => {
 }
 
 const creatMessage = (year, message) => {
-  const textArea = document.getElementById('message-area');
+    const textArea = document.getElementById('message-area');
     textArea.innerHTML = '';
     const h1 = document.createElement('h1');
     h1.innerText = `${year} ${message}`;
