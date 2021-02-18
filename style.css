@@ -9,7 +9,7 @@ body{
   background-image: url("images/body-bg.jpg");
 }
 
-.input-field{
+#input-field{
   background-color: rgb(238, 198, 198);
   border-radius: 10px;
   margin: 0 auto;
@@ -20,7 +20,7 @@ body{
   font-size: 30px;
   margin-top: 7%;
   box-shadow: 0px 0px 10px 20px rgba(235, 171, 89, 0.582);
-  display: none;
+  
 }
 
 input{
@@ -51,7 +51,6 @@ button{
   margin-top: 10px;
   box-shadow: 0px 0px 10px 20px rgba(235, 171, 89, 0.582);
   height: 100px;
-  display: none;
 }
 
 li, a {

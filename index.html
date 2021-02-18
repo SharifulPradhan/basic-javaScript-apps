@@ -17,7 +17,7 @@
     <h1 class="logo">Basic<sup style="color: tomato">JAVA</sup>Apps</h1>
     <nav>
       <ul class="nav-links">
-        <li onclick="gradeFinder()"><a href="#" id="grade-finder">Grade Finder</a></li>
+        <li><a href="#" id="grade-finder" onclick="gradeFinder()">Grade Finder</a></li>
         <li><a href="#" id="inch-to-feet" onclick="inchToFeet()">Inch To Feet</a></li>
         <li><a href="#" id="leap-year" onclick="leapYear()">Leap Year Or Not</a></li>
         <li><a href="#" id="week days" onclick="weekDays()">Weeks Day Finder</a></li>
@@ -29,17 +29,25 @@
 
 
 
-  <!-- Main Text Field -->
-  <div class="input-field">
-    <h1>Lets have some Fun With JavaScript</h1>
+  <!-- Main Text Field for Grade Finder App-->
+  <div id="input-field">
+      <div id="welcome-message">
+        <h1>Lets have some fun with JavaScript</h1>
+      </div>
+    <div>
+      
+    </div>
   </div>
 
-  <!-- Message Area -->
+  <!-- Message Area for Grade Finder App-->
   <div id="message-area">
+    <div id="welcome-message2">
+      <h1>Get Set Go</h1>
+    </div>
   </div>
-
 
 
   <script src="gradeFinder.js"></script>
+  <script src="inchToFeet.js"></script>
 </body>
 </html>
