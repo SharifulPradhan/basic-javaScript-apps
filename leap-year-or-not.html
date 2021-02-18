@@ -29,16 +29,17 @@
 
   <!-- Main Text Field for Grade Finder App-->
   <div id="input-field">
-      <div id="welcome-message">
-        <h1>Lets have some fun with JavaScript</h1>
-      </div>
+    <label for="role"><h1>Put Year Here<br> ▼</h1></label>
+    <br>
+    <input type="text" name="role" id="number" autocomplete="off">
+    <button id="submit" onclick="leapYear()">Submit</button>
   </div>
 
   <!-- Message Area for Grade Finder App-->
   <div id="message-area">
-    <div id="welcome-message2">
-      <h1>Get Set Go</h1>
-    </div>
+      <h1>Result will show here</h1>
   </div>
+
+  <script src="leapYearOrNot.js"></script>
 </body>
 </html>

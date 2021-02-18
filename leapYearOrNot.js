@@ -1,12 +1,11 @@
-const getvalue = () => {
+const leapYear = () => {
   const getNumber = document.getElementById('number').value;
-  const x = parseInt(getNumber);
-  console.log(x%4);
-  if(x % 4 == 0 && x > 0 && x % 100 == 0){
-    creatMessage(x, 'is a Leap Year');
+  const year = parseInt(getNumber);
+  if((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))){
+    creatMessage(year, 'is a Leap Year');
   }
-  else if(x > 0){
-    creatMessage(x, 'is not a Leap Year');
+  else if(year > 0){
+    creatMessage(year, 'is not a Leap Year');
   }
   else {
     creatMessage('error::', 'Input is invalid');

@@ -1,36 +1,8 @@
-// Function for the Hide Divs
-function gradeFinder() {
-  let div = document.getElementById('welcome-message');
-  let div2 = document.getElementById('welcome-message2');
-  if (div.style.diplay === 'none' && div2.style.diplay === 'none') {
-    div.style.display = 'block';
-    div2.style.display = 'block';
-    createGradeArea();
-  }
-  else {
-    div.style.display = 'none';
-    div2.style.display = 'none';
-    createGradeArea();
-  }
-}
-
-const createGradeArea = () => {
-  const inputField = document.getElementById('input-field');
-  inputField.innerHTML = `
-    <div id="program-area">
-      <label id="welcome-text" for="role"><h1>Enter Your Marks Here<br> ▼</h1></label>
-      <br>
-      <input type="text" name="role" id="number" autocomplete="off">
-      <button id="submit" onclick="getGrade()">Submit</button>
-    </div>
-  `
-}
-
-
 
 // Main Function for the APP
 const getGrade = () => {
   const number = document.getElementById('number').value;
+  document.getElementById('number').value = '';
   const x = parseInt(number);
   const message = document.getElementById('message-area');
   message.innerHTML = '';
@@ -66,6 +38,7 @@ const getGrade = () => {
     return;
   }
   else if ( x<=30){
+    showMessage.style.color = 'red';
     showMessage.innerHTML = 'You Got F';
     return;
   }
