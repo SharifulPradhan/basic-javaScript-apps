@@ -141,4 +141,7 @@ header {
   li {
     margin-top: 10px;
   }
+  .logo {
+    font-size: 4rem;
+  }
 }
