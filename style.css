@@ -96,3 +96,49 @@ header {
   border-radius: 10px;
 }
   
+
+@media only screen and (max-width: 768px) {
+  h1, p, nav, li, a {
+    font-size: 1rem;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgb(65, 61, 61);
+  }
+  ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  input{
+    width: 50%;
+    padding: 5%;
+  }
+  input[type=text] {
+    font-size: 1rem;
+  }
+  
+  button{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  #message-area{
+    width: 80%;
+    padding: 20px;
+    margin-top: 20px;
+    height: 50%;
+  }
+  #input-field{
+    width: 80%;
+    height: 50%;
+    padding: 20px;
+  }
+  li {
+    margin-top: 10px;
+  }
+}
